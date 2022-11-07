@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.page{
+    background-color: skyblue;
+    width:100%;
+    min-width:1000px;
+    height:auto;
+    
+}
+
+.page h1{
+    margin: auto 0;
+    text-align: center;
+    font-size: 50px;
+    padding: 25px;
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    margin: auto 0;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav li{
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+}
+.midAbout{
+    display: block;
+    position: relative;
+    margin: auto 0;
+}
+#AboutMe{
+   border: solid 5px;
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 25px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+}
+#AboutMe p{
+    padding-bottom: 10px;
+    display: inline-flex;
+    margin-left: 15px;
+}
+#AboutMe h1{
+    font-size: 25px;
+    float: left;
+    margin-left: 15px;
+}
+
+img{
+    width: 200px;
+    height: 100px;
+    border: solid 5px;
+    border-radius: 25px;
+}
+#MyProjects{
+    border: solid 5px;
+     background-color: white;
+     height: fit-content;
+     min-width: 1000px;
+     border-radius: 20px;
+     margin-left: 80px;
+     margin-right: 80px;
+     margin-bottom: 50px;
+     display: flex;
+ }
+ #MyProjects p{
+     padding-bottom: 10px;
+     display: inline-flex;
+     margin-left: 15px;
+ }
+ #MyProjects h1{
+     font-size: 25px;
+     float: left;
+     margin-left: 15px;
+ }
+ #col1{
+    display: table-cell;
+    padding: 25px;
+ }
+ #Apps{
+    border: solid 5px;
+     background-color: white;
+     height: fit-content;
+     min-width: 1000px;
+     border-radius: 20px;
+     margin-left: 80px;
+     margin-right: 80px;
+     margin-bottom: 50px;
+     display: flex;
+ }
+ #Apps p{
+     padding-bottom: 10px;
+     display: inline-flex;
+     margin-left: 15px;
+ }
+ #Apps h1{
+     font-size: 25px;
+     float: left;
+     margin-left: 15px;
+ }
+ #ContactMe{
+    border: solid 5px;
+     background-color: white;
+     height: fit-content;
+     min-width: 1000px;
+     border-radius: 20px;
+     margin-left: 80px;
+     margin-right: 80px;
+     display: flex;
+ }
+ #ContactMe p{
+     padding-bottom: 10px;
+     display: inline-flex;
+     margin-left: 15px;
+ }
+ #ContactMe h1{
+     font-size: 25px;
+     float: left;
+     margin-left: 15px;
+ }

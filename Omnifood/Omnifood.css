@@ -1,0 +1,564 @@
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    color: #555;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+.header{
+    background-image:linear-gradient( rgba(0, 0, 0, 0.7) ,rgba(0, 0, 0, 0.7)), url(../Resources/OmnifoodContents/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.nav{
+    padding-top: 20px;
+}
+.section{
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.hero{
+    width: 1140px; 
+    position:absolute ;
+    top: 50%;
+    right: -50%;
+    transform: translate(-50%,-50%) ;
+    
+}
+.hero h1{
+    color: white;
+    font-size: 200%;
+    font-weight: 100;
+    word-spacing: 4;
+    text-transform: uppercase;
+}
+.row img{
+    height: 100px;
+    width: auto;
+}
+.navigation{
+    height: 100px;
+    display: flex;
+    float: right;
+    list-style-type: none;
+    justify-items: space-between;
+}
+.navigation li{
+    margin: 0 20px;
+    align-self: center;
+}
+.navigation a{
+    color: white;
+    padding-bottom: 5px;
+    border-bottom: transparent;
+    border-color: #e67e22;
+}
+.navigation a:link{
+    text-decoration: none; 
+}
+.navigation a:visited {
+    text-decoration: none;
+}
+.navigation a:hover {
+    text-decoration: none;
+    border-bottom: solid #e67e22;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 100%;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: white;
+}
+.btn:hover, .btn:active{
+    background-color: #e67e22;
+}
+.btnHungry{
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #e67e22;
+    border: #e67e22 1px solid;
+}
+.btnHungry:hover, .btnHungry:active{
+    background-color: transparent;
+    color: #e67e22;
+    transition: color .2s;
+    /* border: 1px solid #264C72; */
+}
+.btnShow{
+    border: 1px solid;
+    color: #e67e22;
+    background-color: transparent;
+    transition: color 0.2s;
+}
+.btnShow:hover,.btnShow:active{
+    border: 1px solid #264C72;
+    color: white;
+}
+.words{
+    max-width: 1140px;
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+    
+}
+h1{
+    text-transform: uppercase;
+}
+.words h1{
+    padding-top: 75px;
+    margin-bottom: 50px;
+    font-size: 250%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+.dash{
+    height: 2px;
+    width: 15%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    background-color: #e67e22
+}
+.words p{
+    width: 60%;
+    margin: 0px auto;
+    margin-bottom: 100px;
+    margin-top: -50px;
+    line-height: 35px;
+}
+.boxes{
+    min-height: 400px;
+    display: flex;
+    margin: 0 auto;
+    padding: 50px 0;
+
+}
+.box{
+    min-height: 400px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box p{
+    min-height: 200px;
+}
+.box::after{
+    flex-wrap: wrap;
+}
+ion-icon{
+    color: #e67e22;
+    font-size: 64px;
+}
+
+.pics{
+    margin-top: 100px;
+}
+.grid{
+    
+    display: flex;
+    flex-shrink: 1;
+}
+.photo{
+    
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    
+}
+.photo img{
+    opacity: .7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform .5s, opacity .5s;
+}
+.photo img:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
+.app{
+    background-color:#f4f4f4;
+}
+.phone{
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    max-width: 1140px;
+}
+.phone img{
+    height: 400px;
+    width: auto;
+}
+.list{
+    
+    float: right;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    width: 40%;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+}
+
+ .listItem div{
+    float: left;
+    height: 50px;
+    width: 50px;
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    border-radius: 50px;
+    padding-top: 10px;
+    margin-right: 20px;
+} 
+.btnApps{
+    display: flex;
+}
+.btnApps img{
+    height: 50px;
+    margin: 10px;
+}
+.wholeCity{
+    padding-bottom: 100px;
+}
+.cities{
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.cities img{
+    height: 100px;
+    width: auto;
+}
+.city{
+    display: flex;
+    min-width: 200px;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.lisbon ion-icon{
+    margin-right: 5px;
+   font-size: 15px;
+}
+.city h3{
+    font-weight: 300;
+}
+.lisbon a {
+    color: #e67e22;
+    text-decoration-thickness: .1px;
+    text-underline-offset: 5px;
+}
+.lisbon a:hover{
+    text-decoration: none;
+}
+
+
+.reviews{
+    color: white;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.8) ,rgba(0, 0, 0, 0.8)), url(../Resources/OmnifoodContents/back-customers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    padding-bottom: 75px;
+}
+#reviewsHead{
+    max-width: 1140px;
+    margin: 0px auto;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+#reviewsHead h1{
+    padding-top: 100px;
+    margin-bottom: 25px;
+    font-size: 150%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+#reviewsDash{
+    height: 2px;
+    width: 15%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: #e67e22
+}
+.quote{
+    padding: 0 2%;
+}
+.quote h1{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 300%;
+    width: fit-content;
+    margin-bottom: -30px;
+}
+.quote p{
+    font-style: italic;
+}
+.content{
+    margin-bottom: 50px;
+
+}
+.person{
+    display: flex;
+    align-items: center;
+}
+.avatar{
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+    
+}
+#avatar1{
+    background-image: url(../Resources/OmnifoodContents/customer-1.jpg);
+    background-size: contain;
+}
+#avatar2{
+    background-image: url(../Resources/OmnifoodContents/customer-2.jpg);
+    background-size: contain;
+}
+#avatar3{
+    background-image: url(../Resources/OmnifoodContents/customer-3.jpg);
+    background-size: contain;
+}
+.customers{
+    display: flex;
+    padding: 0 2%;
+}
+
+
+.prices{
+    background-color: #f4f4f4;
+}
+#signupDash{
+    margin-bottom: 20px;
+}
+.sub{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 600px;
+    background-color: #f4f4f4;
+}
+.premium{
+    width: 31%;
+    margin: 0px 1.75%;
+    display: flex;
+    flex-direction: column;
+}
+.subTop{
+    min-height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 1px;
+    padding-left: 2%;
+    background-color: white;
+    box-shadow: 0 2px 2px #cac5c5;
+}
+.price{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+   
+}
+.subBot{
+    min-height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    box-shadow: 0 2px 2px #cac5c5;
+}
+.subTitle{
+    text-transform: uppercase;
+    
+}
+.perMonth{
+    font-size: 400%;
+    font-weight: 100 ;
+    color: #e67e22;
+    margin-right: 10px;
+}
+.month{
+    font-size: 100%;
+    color: #e67e22;
+}
+.subBot ion-icon{
+    font-size: 20px;
+    
+}
+.signupbtn{
+    margin: 0 auto;
+}
+.subBtn{
+    margin: 0 auto; 
+    font-weight: 300;
+    background-color: #e67e22;
+    border: #e67e22 1px solid;
+    
+}
+.subBtn:hover{
+    background-color: #264C72;
+}
+.subBtn2{
+    background-color: white;
+    color: #e67e22;
+}
+.subBtn2:hover{
+    background-color: #e67e22;
+    color: white;
+}
+
+
+.map{
+    background-color: black;
+    width: 100%;
+    min-width: none;
+    position: relative;
+}
+.map iframe{
+    width: 100%;
+    position: relative;
+    /* opacity: .7; */
+}
+.newsletter{
+    width: 50%;
+    min-height:95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    /* opacity: .7; */
+    background-image:linear-gradient( rgba(255, 255, 255, 0.8) ,rgba(255, 255, 255, 0.8));
+    position: absolute;
+    top: 0;
+    right: 0%;
+    padding: 0 2%;
+}
+.newsletterTitle{
+    max-width: 1140px;
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+    /* background-color: white; */
+}
+.newsletterTitle h1{
+    padding-bottom: 25px;
+    font-size: 150%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+.form{
+    display: flex;
+    justify-content: space-around;
+    min-height: 40px;
+
+}
+.formDash{
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.formLabel{
+    justify-self: left;
+    width: 30%;
+}
+.formInputHld{
+    width: 60%;
+}
+.formInput{
+    width: 100%;
+    height: 100%;
+}
+#check{
+    margin-right: 5px;
+}
+
+footer{
+    width: 100%;
+    clear: both;
+    background-color: #264C72;
+    color: #e67e22;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.footLinks{
+    width: 60%;
+    list-style-type: none;
+    justify-content: space-evenly;
+    display: flex;
+    color: white;
+}
+.footLinks a{
+    text-decoration: none;
+    color: #e67e22;
+    font-weight: 300;
+}
+.footLinks a:hover{
+    color: white;
+}
+.footSocials{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footSocials ion-icon{
+    font-size: 24px;
+    color: #e67e22;
+}
+#fb:hover{
+    color: #1877F2;
+}
+#twitter:hover{
+    color: #1DA1F2;
+}
+#google:hover{
+    color: #DB4437;
+}
+#ig:hover{
+    color: #C13584;
+}
